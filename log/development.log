@@ -421,3 +421,319 @@ Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-12-31 14:38:13 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Title"], ["description", "Blah"], ["created_at", "2018-04-30 21:22:21.373390"], ["updated_at", "2018-04-30 21:22:21.373390"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "Title1"], ["description", "Blah"], ["created_at", "2018-04-30 21:22:21.377558"], ["updated_at", "2018-04-30 21:22:21.377558"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Title2"], ["description", "Blah"], ["created_at", "2018-04-30 21:22:21.380346"], ["updated_at", "2018-04-30 21:22:21.380346"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "Title3"], ["description", "Blah"], ["created_at", "2018-04-30 21:22:21.383446"], ["updated_at", "2018-04-30 21:22:21.383446"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Title4"], ["description", "Blah"], ["created_at", "2018-04-30 21:22:21.386540"], ["updated_at", "2018-04-30 21:22:21.386540"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "Title5"], ["description", "Blah"], ["created_at", "2018-04-30 21:22:21.390422"], ["updated_at", "2018-04-30 21:22:21.390422"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/index" for ::1 at 2018-04-30 17:27:46 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/index"):
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.10) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/MikeMyung/.rvm/rubies/ruby-2.5.0/lib/ruby/2.5.0/webrick/httpserver.rb:140:in `service'
+  /Users/MikeMyung/.rvm/rubies/ruby-2.5.0/lib/ruby/2.5.0/webrick/httpserver.rb:96:in `run'
+  /Users/MikeMyung/.rvm/rubies/ruby-2.5.0/lib/ruby/2.5.0/webrick/server.rb:307:in `block in start_thread'
+
+
+  Rendered /Users/MikeMyung/.rvm/gems/ruby-2.5.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/MikeMyung/.rvm/gems/ruby-2.5.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /Users/MikeMyung/.rvm/gems/ruby-2.5.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (15.2ms)
+  Rendered /Users/MikeMyung/.rvm/gems/ruby-2.5.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (15.8ms)
+  Rendered /Users/MikeMyung/.rvm/gems/ruby-2.5.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (240.9ms)
+
+
+Started GET "/posts" for ::1 at 2018-04-30 17:27:50 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 508ms (Views: 504.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/posts" for ::1 at 2018-04-30 17:28:38 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 55ms (Views: 53.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts.2" for ::1 at 2018-04-30 17:28:40 -0400
+Processing by PostsController#index as 
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 95ms (Views: 92.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts.1" for ::1 at 2018-04-30 17:28:42 -0400
+Processing by PostsController#index as 
+  [1m[36mPost Load (0.8ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 101ms (Views: 99.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts.4" for ::1 at 2018-04-30 17:28:43 -0400
+Processing by PostsController#index as 
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 128ms (Views: 126.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts.2" for ::1 at 2018-04-30 17:28:48 -0400
+Processing by PostsController#index as 
+  [1m[36mPost Load (1.4ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 112ms (Views: 109.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/posts/4" for ::1 at 2018-04-30 17:28:49 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mPost Load (0.9ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered posts/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 97ms (Views: 78.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/posts/1" for ::1 at 2018-04-30 17:28:53 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 136ms (Views: 133.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for ::1 at 2018-04-30 17:30:30 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.1ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 116ms (Views: 103.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/posts.3" for ::1 at 2018-04-30 17:30:38 -0400
+Processing by PostsController#index as 
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 112ms (Views: 110.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts.2" for ::1 at 2018-04-30 17:30:46 -0400
+Processing by PostsController#index as 
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 65ms (Views: 62.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/2" for ::1 at 2018-04-30 17:30:47 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (2.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered posts/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 56ms (Views: 52.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/posts/2/edit" for ::1 at 2018-04-30 17:32:49 -0400
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.6ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered posts/edit.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 1.7ms)
+
+SyntaxError (/Users/MikeMyung/Development/Labs/Rails/rails-edit-update-action-readme-nyc-web-040218/app/views/posts/edit.html.erb:1: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...rm_tag posts_path(@post) method="put" do @output_buffer.safe...
+...                         ^~~~~~
+/Users/MikeMyung/Development/Labs/Rails/rails-edit-update-action-readme-nyc-web-040218/app/views/posts/edit.html.erb:1: syntax error, unexpected keyword_do_block, expecting keyword_end
+...sts_path(@post) method="put" do @output_buffer.safe_append='
+...                             ^~
+/Users/MikeMyung/Development/Labs/Rails/rails-edit-update-action-readme-nyc-web-040218/app/views/posts/edit.html.erb:3: syntax error, unexpected '<'
+...pend=( text_field_tag :title, <%= @post.title );@output_buff...
+...                              ^
+/Users/MikeMyung/Development/Labs/Rails/rails-edit-update-action-readme-nyc-web-040218/app/views/posts/edit.html.erb:9: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end ;@output_buffer.to_s
+          ^~~
+/Users/MikeMyung/Development/Labs/Rails/rails-edit-update-action-readme-nyc-web-040218/app/views/posts/edit.html.erb:10: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/Users/MikeMyung/Development/Labs/Rails/rails-edit-update-action-readme-nyc-web-040218/app/views/posts/edit.html.erb:12: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  app/views/posts/edit.html.erb:1: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  app/views/posts/edit.html.erb:1: syntax error, unexpected keyword_do_block, expecting keyword_end
+  app/views/posts/edit.html.erb:3: syntax error, unexpected '<'
+  app/views/posts/edit.html.erb:9: syntax error, unexpected keyword_end, expecting ')'
+  app/views/posts/edit.html.erb:10: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/posts/edit.html.erb:12: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /Users/MikeMyung/.rvm/gems/ruby-2.5.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.7ms)
+  Rendered /Users/MikeMyung/.rvm/gems/ruby-2.5.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/MikeMyung/.rvm/gems/ruby-2.5.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/MikeMyung/.rvm/gems/ruby-2.5.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (131.4ms)
+
+
+Started GET "/posts/2/edit" for ::1 at 2018-04-30 17:33:12 -0400
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered posts/edit.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.2ms)
+
+SyntaxError (/Users/MikeMyung/Development/Labs/Rails/rails-edit-update-action-readme-nyc-web-040218/app/views/posts/edit.html.erb:1: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...orm_tag post_path(@post) method="put" do @output_buffer.safe...
+...                         ^~~~~~
+/Users/MikeMyung/Development/Labs/Rails/rails-edit-update-action-readme-nyc-web-040218/app/views/posts/edit.html.erb:1: syntax error, unexpected keyword_do_block, expecting keyword_end
+...ost_path(@post) method="put" do @output_buffer.safe_append='
+...                             ^~
+/Users/MikeMyung/Development/Labs/Rails/rails-edit-update-action-readme-nyc-web-040218/app/views/posts/edit.html.erb:3: syntax error, unexpected '<'
+...pend=( text_field_tag :title, <%= @post.title );@output_buff...
+...                              ^
+/Users/MikeMyung/Development/Labs/Rails/rails-edit-update-action-readme-nyc-web-040218/app/views/posts/edit.html.erb:9: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end ;@output_buffer.to_s
+          ^~~
+/Users/MikeMyung/Development/Labs/Rails/rails-edit-update-action-readme-nyc-web-040218/app/views/posts/edit.html.erb:10: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/Users/MikeMyung/Development/Labs/Rails/rails-edit-update-action-readme-nyc-web-040218/app/views/posts/edit.html.erb:12: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  app/views/posts/edit.html.erb:1: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  app/views/posts/edit.html.erb:1: syntax error, unexpected keyword_do_block, expecting keyword_end
+  app/views/posts/edit.html.erb:3: syntax error, unexpected '<'
+  app/views/posts/edit.html.erb:9: syntax error, unexpected keyword_end, expecting ')'
+  app/views/posts/edit.html.erb:10: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/posts/edit.html.erb:12: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /Users/MikeMyung/.rvm/gems/ruby-2.5.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /Users/MikeMyung/.rvm/gems/ruby-2.5.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendered /Users/MikeMyung/.rvm/gems/ruby-2.5.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/MikeMyung/.rvm/gems/ruby-2.5.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (148.9ms)
+
+
+Started GET "/posts/2/edit" for ::1 at 2018-04-30 17:35:05 -0400
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (1.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered posts/edit.html.erb within layouts/application (5.3ms)
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 1.2ms)
+
+SyntaxError (/Users/MikeMyung/Development/Labs/Rails/rails-edit-update-action-readme-nyc-web-040218/app/views/posts/edit.html.erb:3: syntax error, unexpected '<'
+...pend=( text_field_tag :title, <%= @post.title );@output_buff...
+...                              ^
+/Users/MikeMyung/Development/Labs/Rails/rails-edit-update-action-readme-nyc-web-040218/app/views/posts/edit.html.erb:9: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end ;@output_buffer.to_s
+          ^~~
+/Users/MikeMyung/Development/Labs/Rails/rails-edit-update-action-readme-nyc-web-040218/app/views/posts/edit.html.erb:10: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/Users/MikeMyung/Development/Labs/Rails/rails-edit-update-action-readme-nyc-web-040218/app/views/posts/edit.html.erb:12: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  app/views/posts/edit.html.erb:3: syntax error, unexpected '<'
+  app/views/posts/edit.html.erb:9: syntax error, unexpected keyword_end, expecting ')'
+  app/views/posts/edit.html.erb:10: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/posts/edit.html.erb:12: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /Users/MikeMyung/.rvm/gems/ruby-2.5.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (87.8ms)
+  Rendered /Users/MikeMyung/.rvm/gems/ruby-2.5.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.9ms)
+  Rendered /Users/MikeMyung/.rvm/gems/ruby-2.5.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/MikeMyung/.rvm/gems/ruby-2.5.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (351.3ms)
+
+
+Started GET "/posts/2/edit" for ::1 at 2018-04-30 17:35:38 -0400
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered posts/edit.html.erb within layouts/application (30.1ms)
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `stringify_keys' for "put":String):
+    1: <%= form_tag post_path(@post), method="put" do %>
+    2:   <label>Post title:</label><br>
+    3:   <%= text_field_tag :title, @post.title %> %><br>
+    4: 
+  app/views/posts/edit.html.erb:1:in `_app_views_posts_edit_html_erb__2100818710107435238_70198576816260'
+
+
+  Rendered /Users/MikeMyung/.rvm/gems/ruby-2.5.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.2ms)
+  Rendered /Users/MikeMyung/.rvm/gems/ruby-2.5.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered /Users/MikeMyung/.rvm/gems/ruby-2.5.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.0ms)
+  Rendered /Users/MikeMyung/.rvm/gems/ruby-2.5.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (138.2ms)
+
+
+Started GET "/posts/2/edit" for ::1 at 2018-04-30 17:36:15 -0400
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered posts/edit.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 42ms (Views: 39.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/2/edit" for ::1 at 2018-04-30 17:36:27 -0400
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered posts/edit.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 38ms (Views: 36.4ms | ActiveRecord: 0.2ms)
+
+
+Started PUT "/posts/2" for ::1 at 2018-04-30 17:36:36 -0400
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZxNYNErjevxAhEv2QRIH4kDAJPPxMjK9VUpP0fI73uKS62U1LdOQYOxDZrjCmZgUZWxt+HIARACZP681dO/D9w==", "title"=>"Rails intro", "description"=>"bob", "commit"=>"Submit Post", "id"=>"2"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.9ms)[0m  UPDATE "posts" SET "title" = ?, "description" = ?, "updated_at" = ? WHERE "posts"."id" = ?  [["title", "Rails intro"], ["description", "bob"], ["updated_at", "2018-04-30 21:36:36.118382"], ["id", 2]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/posts/2
+Completed 302 Found in 47ms (ActiveRecord: 4.5ms)
+
+
+Started GET "/posts/2" for ::1 at 2018-04-30 17:36:36 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered posts/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 33ms (Views: 30.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for ::1 at 2018-04-30 17:36:39 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.8ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 41ms (Views: 39.4ms | ActiveRecord: 0.8ms)
